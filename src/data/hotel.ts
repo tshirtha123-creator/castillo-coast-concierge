@@ -79,10 +79,10 @@ export const apartments: Apartment[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = "212600000000"; // Replace with actual number
+export const WHATSAPP_NUMBER = "212622330961";
 export const HOTEL_EMAIL = "castillodalilah65@gmail.com";
 export const HOTEL_ADDRESS = "El Ouatia, Tan-Tan, Morocco";
-export const HOTEL_COORDS = { lat: 28.6024, lng: -10.0667 };
+export const HOTEL_COORDS = { lat: 28.5022681, lng: -11.32893 };
 
 export const getWhatsAppUrl = (message: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;

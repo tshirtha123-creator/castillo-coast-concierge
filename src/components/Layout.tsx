@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { getWhatsAppUrl, HOTEL_EMAIL, HOTEL_ADDRESS, WHATSAPP_NUMBER } from "@/data/hotel";
+import hotelLogo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -36,9 +37,7 @@ function Navbar() {
     >
       <nav className="container mx-auto flex items-center justify-between px-4 py-3 lg:py-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-heading text-xl lg:text-2xl font-bold text-primary-foreground tracking-wide">
-            Castillo Dalilah
-          </span>
+          <img src={hotelLogo} alt="Castillo Dalilah" className="h-10 lg:h-12 w-auto" />
         </Link>
 
         {/* Desktop nav */}
@@ -132,7 +131,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-2xl font-bold text-accent mb-4">Castillo Dalilah</h3>
+            <img src={hotelLogo} alt="Castillo Dalilah" className="h-14 w-auto mb-4 brightness-0 invert" />
             <p className="font-body text-sm text-primary-foreground/70 leading-relaxed">
               A luxury coastal retreat in El Ouatia, Tan-Tan, Morocco. Experience the perfect family beach holiday.
             </p>
