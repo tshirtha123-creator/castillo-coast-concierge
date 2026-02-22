@@ -79,7 +79,7 @@ export default function Contact() {
               {/* Map */}
               <div className="rounded-2xl overflow-hidden shadow-luxury">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13000!2d-10.0667!3d28.6024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb6790c2b636e67%3A0x60e3b5bfe45d2f7c!2sEl+Ouatia!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-11.3315049!3d28.5022681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4a90e8b82c821b%3A0x7741e18357d4403c!2sCastillo+Dalilah!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
