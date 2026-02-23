@@ -15,10 +15,10 @@ import ApartmentCard from "@/components/ApartmentCard";
 import { apartments, getWhatsAppUrl } from "@/data/hotel";
 
 const testimonials = [
-  { name: "Sarah M.", rating: 5, text: "An absolute gem! The views are breathtaking and the apartments are incredibly well-maintained. Our family had the best vacation ever.", country: "France" },
-  { name: "Ahmed K.", rating: 5, text: "The perfect coastal escape. The staff were warm and welcoming, and the location is unbeatable. We'll definitely be coming back!", country: "Morocco" },
-  { name: "Elena R.", rating: 4, text: "Beautiful property with stunning ocean views. The rooms are spacious and clean. Highly recommend for families looking for a peaceful getaway.", country: "Spain" },
-  { name: "James W.", rating: 5, text: "Castillo Dalilah exceeded all our expectations. The sunsets from our balcony were magical. A true hidden paradise.", country: "UK" },
+  { name: "Thierry", rating: 5, text: "Idéal pour se reposer. Appartement avec balcon, vue sur mer, très confortable, pour pouvoir se reposer. Accueil chaleureux.", country: "France" },
+  { name: "Lorenzo", rating: 5, text: "Inoubliable. Le réceptionniste était très aimable et parlait un excellent anglais. J'étais fatigué après une nuit de voyage et j'ai été accueilli bien avant l'heure d'enregistrement.", country: "Italy" },
+  { name: "Radosław", rating: 5, text: "Hôtel très confortable. Un appartement de 3 pièces très spacieux, idéal pour un long séjour en famille. La cuisine est entièrement équipée. Le personnel est très accueillant.", country: "Poland" },
+  { name: "Michael", rating: 5, text: "Appartement parfait !!! Un immeuble et un appartement si beaux et de si bon goût ! Le style marocain, j'ai adoré ! Un des meilleurs endroits du Maroc pour nous.", country: "Germany" },
 ];
 
 const benefits = [
