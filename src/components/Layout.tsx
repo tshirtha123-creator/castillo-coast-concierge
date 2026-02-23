@@ -187,13 +187,13 @@ function Footer() {
               Follow Us
             </h4>
             <div className="flex gap-4">
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors text-sm font-body">
+              <a href="https://www.instagram.com/castillo.dalilah.65/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-accent transition-colors text-sm font-body">
                 Instagram
               </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors text-sm font-body">
+              <a href="https://www.facebook.com/castillodalilah/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-accent transition-colors text-sm font-body">
                 Facebook
               </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors text-sm font-body">
+              <a href="https://www.linkedin.com/company/castillo-dalilah/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-accent transition-colors text-sm font-body">
                 LinkedIn
               </a>
             </div>
