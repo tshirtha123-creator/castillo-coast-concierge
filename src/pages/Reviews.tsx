@@ -4,12 +4,10 @@ import { Star, Send } from "lucide-react";
 import Layout from "@/components/Layout";
 
 const approvedReviews = [
-  { name: "Sarah M.", rating: 5, text: "An absolute gem! The views are breathtaking and the apartments are incredibly well-maintained. Our family had the best vacation ever.", date: "2025-12" },
-  { name: "Ahmed K.", rating: 5, text: "The perfect coastal escape. The staff were warm and welcoming, and the location is unbeatable. We'll definitely be coming back!", date: "2025-11" },
-  { name: "Elena R.", rating: 4, text: "Beautiful property with stunning ocean views. The rooms are spacious and clean. Highly recommend for families looking for a peaceful getaway.", date: "2025-10" },
-  { name: "James W.", rating: 5, text: "Castillo Dalilah exceeded all our expectations. The sunsets from our balcony were magical. A true hidden paradise.", date: "2025-09" },
-  { name: "Fatima B.", rating: 5, text: "We loved every moment of our stay. The pool, the beach, the rooms — everything was wonderful. Can't wait to return!", date: "2025-08" },
-  { name: "Marco P.", rating: 4, text: "Great location and comfortable apartments. The family-friendly atmosphere made it easy to relax and enjoy. Would recommend to anyone.", date: "2025-07" },
+  { name: "Thierry", rating: 5, text: "Idéal pour se reposer. Appartement avec balcon, vue sur mer, très confortable, pour pouvoir se reposer. Accueil chaleureux.", date: "2025-01", country: "France", type: "Couple" },
+  { name: "Lorenzo", rating: 5, text: "Inoubliable. Le réceptionniste était très aimable et parlait un excellent anglais. J'étais fatigué après une nuit de voyage et j'ai été accueilli bien avant l'heure d'enregistrement.", date: "2026-02", country: "Italy", type: "Solo Traveler" },
+  { name: "Radosław", rating: 5, text: "Hôtel très confortable. Un appartement de 3 pièces très spacieux, idéal pour un long séjour en famille. La cuisine est entièrement équipée. Le personnel est très accueillant. La réceptionniste nous a donné de nombreux conseils sur les endroits à visiter.", date: "2024-11", country: "Poland", type: "Couple" },
+  { name: "Michael", rating: 5, text: "Appartement parfait !!! Un immeuble et un appartement si beaux et de si bon goût ! Le style marocain, j'ai adoré ! Un des meilleurs endroits du Maroc pour nous. Les propriétaires sont très sympathiques !", date: "2024-11", country: "Germany", type: "Group" },
 ];
 
 export default function Reviews() {
@@ -57,9 +55,22 @@ export default function Reviews() {
                   ))}
                 </div>
                 <p className="font-body text-sm text-muted-foreground leading-relaxed mb-4 italic">"{r.text}"</p>
-                <p className="font-heading text-sm font-bold text-foreground">{r.name}</p>
+                <div className="flex items-center justify-between">
+                  <p className="font-heading text-sm font-bold text-foreground">{r.name}</p>
+                  <p className="font-body text-xs text-muted-foreground">{r.country} · {r.type}</p>
+                </div>
               </motion.div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <a
+              href="https://www.booking.com/hotel/ma/castillo-dalilah.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body text-sm text-accent hover:underline font-medium"
+            >
+              See more reviews on Booking.com →
+            </a>
           </div>
         </div>
       </section>
