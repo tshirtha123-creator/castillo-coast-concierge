@@ -5,9 +5,9 @@ import { useState } from "react";
 
 import heroImage from "@/assets/hero-hotel.jpg";
 import hotelAbout from "@/assets/hotel-about.jpg";
-import placeBeach from "@/assets/place-beach.jpg";
-import placeSouk from "@/assets/place-souk.jpg";
-import placeDesert from "@/assets/place-desert.jpg";
+import placeOasis from "@/assets/place-oasis.jpg";
+import placeChbika from "@/assets/place-chbika.jpg";
+import placeSinkhole from "@/assets/place-sinkhole.jpg";
 
 import Layout from "@/components/Layout";
 import BookingBanner from "@/components/BookingBanner";
@@ -29,9 +29,9 @@ const benefits = [
 ];
 
 const places = [
-  { name: "El Ouatia Beach", image: placeBeach, description: "Golden sands and turquoise waters just steps from the hotel.", mapUrl: "https://maps.google.com/?q=28.6024,-10.0667" },
-  { name: "Tan-Tan Souk", image: placeSouk, description: "Vibrant local market with spices, crafts, and authentic Moroccan culture.", mapUrl: "https://maps.google.com/?q=28.4380,-11.1031" },
-  { name: "Desert & Coast", image: placeDesert, description: "Where the Sahara meets the Atlantic — dramatic cliffs and dunes.", mapUrl: "https://maps.google.com/?q=28.55,-10.5" },
+  { name: "Ouin Medkour Oasis", image: placeOasis, description: "A beautiful green escape located inland, east of the coastal plains.", mapUrl: "https://www.google.com/maps/place/OUIN+MADKOUR+OASIS/@28.3888883,-10.8379051,17z" },
+  { name: "Oued Chbika (Coastal Lagoon)", image: placeChbika, description: "Stunning area where the river meets the sea, about 50 km south of El Ouatia.", mapUrl: "https://www.google.com/maps/place/Oued+Chbika/@28.4396779,-11.3775195,15z" },
+  { name: "Hafrat Ajab Allah (Devil's Hole)", image: placeSinkhole, description: "A massive natural sinkhole near Akhfennir, about 100 km south of El Ouatia.", mapUrl: "https://www.google.com/maps/place/Grotte+d'Akhfennir+Ajeb+Lah/@28.1070088,-12.0460024,16z" },
 ];
 
 export default function Index() {
@@ -59,7 +59,7 @@ function HeroSection() {
         alt="Hotel Castillo Dalilah oceanfront view"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/30 to-primary/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/50 to-primary/80" />
 
       <div className="relative z-10 text-center px-4 max-w-3xl">
         <motion.p
@@ -277,7 +277,7 @@ function TestimonialsSection() {
 
           <div className="text-center mt-8">
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/ma/castillo-dalilah.fr.html"
               target="_blank"
               rel="noopener noreferrer"
               className="font-body text-sm text-accent hover:underline"
