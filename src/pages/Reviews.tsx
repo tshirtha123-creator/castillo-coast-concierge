@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, Send } from "lucide-react";
 import Layout from "@/components/Layout";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const approvedReviews = [
   { name: "Thierry", rating: 5, text: "Idéal pour se reposer. Appartement avec balcon, vue sur mer, très confortable, pour pouvoir se reposer. Accueil chaleureux.", date: "2025-01", country: "France", type: "Couple" },
@@ -13,9 +15,22 @@ const approvedReviews = [
 export default function Reviews() {
   const [form, setForm] = useState({ name: "", rating: 5, message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitting(true);
+    const { error } = await supabase.from("reviews").insert({
+      full_name: form.name.trim(),
+      rating: form.rating,
+      message: form.message.trim(),
+    });
+    setSubmitting(false);
+    if (error) {
+      toast({ title: "Error", description: "Failed to submit review. Please try again.", variant: "destructive" });
+      return;
+    }
     setSubmitted(true);
   };
 
@@ -129,9 +144,10 @@ export default function Reviews() {
               </div>
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 rounded-xl bg-accent text-accent-foreground font-body font-semibold py-3 transition-all hover:shadow-gold hover:scale-[1.02]"
+                disabled={submitting}
+                className="w-full flex items-center justify-center gap-2 rounded-xl bg-accent text-accent-foreground font-body font-semibold py-3 transition-all hover:shadow-gold hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Submit Review
+                {submitting ? "Submitting..." : "Submit Review"}
               </button>
             </form>
           )}
