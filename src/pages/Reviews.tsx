@@ -64,7 +64,7 @@ export default function Reviews() {
           </div>
           <div className="text-center mt-10">
             <a
-              href="https://www.booking.com/hotel/ma/castillo-dalilah.html"
+              href="https://www.booking.com/hotel/ma/castillo-dalilah.fr.html"
               target="_blank"
               rel="noopener noreferrer"
               className="font-body text-sm text-accent hover:underline font-medium"
